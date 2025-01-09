@@ -1,0 +1,156 @@
+/**
+ * Write CSS code in this file to style your JavaFX user interface
+ *
+ * Note: You must link this file to your scene object by adding the following line of code to the
+ * JavaFX start() method:
+ *   scene.getStylesheets().add("main.css");
+ */
+
+/* Header Section */
+.header {
+    -fx-padding: 20px;
+    -fx-background-color: #3a3a3a;
+    -fx-border-color: #2d3c47;
+    -fx-border-width: 2px;
+    -fx-alignment: center;
+}
+
+.header .controls-layout {
+    -fx-alignment: center;
+    -fx-spacing: 30px;
+}
+
+.header .controls-layout .title {
+    -fx-font-size: 40px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-text-fill: #f8f8f8;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.header .middle {
+    -fx-alignment: center;
+}
+
+.header .middle .author {
+    -fx-font-size: 16px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-text-fill: #f8f8f8;
+    -fx-font-weight: normal;
+    -fx-padding: 10px 0;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.header .bottom {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+.header .bottom .clear,
+.header .bottom .random {
+    -fx-padding: 12px 24px;
+    -fx-background-color: #f39c12;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 16px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.header .bottom .clear:hover,
+.header .bottom .random:hover {
+    -fx-background-color: #e67e22;
+}
+
+.game-board {
+    -fx-padding: 10px;
+    -fx-hgap: 5px;
+    -fx-vgap: 5px;
+    -fx-alignment: center;
+    -fx-background-color: #34495e;
+}
+
+.game-board .cell {
+    -fx-background-color: #2c3e50;
+    -fx-border-color: #7f8c8d;
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ecf0f1;
+    -fx-alignment: center;
+}
+
+.game-board .lamp {
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f39c12;
+    -fx-font-size: 18px;
+    -fx-text-fill: #2c3e50;
+    -fx-alignment: center;
+}
+
+.game-board .illegal {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: #ecf0f1;
+    -fx-alignment: center;
+}
+
+.game-board .lit {
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f39c12;
+}
+
+.game-board .wall {
+    -fx-background-color: #7f8c8d;
+    -fx-text-fill: #ecf0f1;
+}
+
+.game-board .clue {
+    -fx-background-color: #7f8c8d;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.game-board .clue-0.illegal {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: #ecf0f1;
+}
+
+.game-board .clue-solved {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.message {
+    -fx-padding: 10px;
+    -fx-background-color: #3a3a3a;
+    -fx-border-color: #2d3c47;
+    -fx-border-width: 2px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.message .top-layout {
+    -fx-alignment: center;
+    -fx-padding: 5px;
+}
+
+.message .top-layout .puzzle-number {
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.message .message-layout {
+    -fx-alignment: center;
+}
+
+.message .message-layout .victory-message {
+    -fx-text-fill: #27ae60;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
